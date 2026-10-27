@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remnant Heartbeat | Funding Legal Cases for Those Who Cannot Afford Representation</title>
+<meta name="description" content="Remnant Heartbeat funds legal cases for those who cannot afford representation: family law, Kingdom business, and real estate.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#020b17;--navy:#001F3F;--navy2:#0a2a4f;--gold:#D4AF37;--gold-hi:#e8c65a;--ink:#f4f4f5;--soft:#d6dbe3;--mute:#9aa6b6;--line:#23364f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:radial-gradient(1100px 560px at 10% -10%,rgba(212,175,55,.16),transparent 60%),radial-gradient(900px 500px at 110% 0%,rgba(10,42,79,.7),transparent 60%),var(--bg)}
+button{font:inherit;color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:20px 16px 48px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.mark{display:flex;align-items:center;gap:12px}
+.mark img{width:48px;height:48px;border-radius:12px;background:#fff;padding:4px;box-shadow:0 0 18px rgba(212,175,55,.45)}
+.mark .nm{font-size:21px;font-weight:700;letter-spacing:.01em}
+.mark .nm small{display:block;font-size:12px;font-weight:400;color:var(--mute)}
+.chip{font-size:14px;color:var(--soft);border:1px solid var(--line);background:rgba(0,31,63,.6);border-radius:999px;padding:7px 14px;white-space:nowrap}
+.chip b{color:var(--gold)}
+.hero{position:relative;border-radius:22px;overflow:hidden;min-height:250px;margin-bottom:16px;border:1px solid var(--line);
+  background:url("hero.jpg") center 40%/cover no-repeat;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,11,23,.05) 30%,rgba(2,11,23,.85) 100%)}
+.hero .say{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:20px 22px}
+.hero h1{margin:0;font-size:34px;line-height:1.15;font-weight:800;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.hero h1 span{color:var(--gold)}
+.helper{display:flex;align-items:flex-start;gap:12px}
+.avatar{flex:none;width:44px;height:44px;border-radius:50%;background:#fff;padding:5px;box-shadow:0 0 18px rgba(212,175,55,.55)}
+.avatar img{width:100%;height:100%;object-fit:contain}
+.bubble{flex:1;border-radius:18px;border-top-left-radius:4px;background:linear-gradient(135deg,rgba(0,31,63,.9),rgba(10,20,35,.95));border:1px solid rgba(212,175,55,.45);padding:16px 18px;box-shadow:0 0 24px rgba(212,175,55,.14)}
+.bubble p{margin:0;color:var(--soft)}
+.bubble p b{color:var(--gold)}
+.line{display:flex;gap:8px;margin:16px 0 18px}
+.field{width:100%;font-size:16px;padding:12px 16px;border-radius:18px;background:rgba(2,11,23,.85);border:1px solid var(--line);color:var(--ink);outline:none;transition:all .15s}
+.field::placeholder{color:#4b5b70}
+.field:focus{border-color:var(--gold);box-shadow:0 0 16px rgba(212,175,55,.35)}
+.green{flex:none;font-size:16px;font-weight:600;padding:11px 22px;border:0;border-radius:999px;background:#059669;color:#fff;cursor:pointer;box-shadow:0 0 18px rgba(16,185,129,.45);transition:all .15s}
+.green:hover{background:#10b981;box-shadow:0 0 26px rgba(16,185,129,.7)}
+.green:active{transform:scale(.95)}
+.quiet{font-size:14px;padding:8px 16px;border-radius:999px;background:rgba(0,31,63,.8);color:var(--soft);border:1px solid var(--line);cursor:pointer}
+.quiet:hover{background:var(--navy2)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{aspect-ratio:1/1;text-align:left;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;border-radius:20px;border:1px solid;padding:18px;box-shadow:0 4px 20px rgba(0,0,0,.45);transition:transform .15s,box-shadow .15s,border-color .15s}
+.card:hover{transform:scale(1.03);box-shadow:0 8px 28px rgba(0,0,0,.6)}
+.card:active{transform:scale(.98)}
+.card .ic{font-size:36px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5))}
+.card .t{font-size:18px;font-weight:600;color:#fafafa;line-height:1.25}
+.card .l{font-size:13px;color:rgba(214,219,227,.85);line-height:1.35;margin-top:6px}
+.gold{background:linear-gradient(135deg,rgba(146,108,12,.75),rgba(66,48,6,.45));border-color:rgba(212,175,55,.6)} .gold:hover{border-color:#f1d27a}
+.navy{background:linear-gradient(135deg,rgba(0,41,84,.85),rgba(0,20,42,.55));border-color:rgba(59,110,170,.55)} .navy:hover{border-color:#7fb0e8}
+.sky{background:linear-gradient(135deg,rgba(12,74,110,.7),rgba(8,47,73,.4));border-color:rgba(3,105,161,.6)} .sky:hover{border-color:#38bdf8}
+.rose{background:linear-gradient(135deg,rgba(136,19,55,.7),rgba(76,5,25,.4));border-color:rgba(190,18,60,.6)} .rose:hover{border-color:#fb7185}
+.emerald{background:linear-gradient(135deg,rgba(6,78,59,.7),rgba(2,44,34,.4));border-color:rgba(4,120,87,.6)} .emerald:hover{border-color:#34d399}
+.violet{background:linear-gradient(135deg,rgba(76,29,149,.7),rgba(46,16,101,.4));border-color:rgba(109,40,217,.6)} .violet:hover{border-color:#a78bfa}
+.amber{background:linear-gradient(135deg,rgba(120,53,15,.7),rgba(69,26,3,.4));border-color:rgba(180,83,9,.6)} .amber:hover{border-color:#fbbf24}
+.teal{background:linear-gradient(135deg,rgba(19,78,74,.7),rgba(4,47,46,.4));border-color:rgba(15,118,110,.6)} .teal:hover{border-color:#2dd4bf}
+.panel{border-radius:20px;background:linear-gradient(135deg,#0b1a2e,var(--bg));border:1px solid var(--line);padding:20px;box-shadow:0 0 24px rgba(0,0,0,.5)}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.panel-head h2{margin:0;font-size:22px;font-weight:600}
+.panel p{color:var(--soft);margin:0 0 12px}
+.panel p.big{font-size:18px;color:var(--ink)}
+.list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.item{border-radius:16px;border:1px solid var(--line);background:rgba(0,31,63,.45);padding:14px}
+.item b{display:block;color:var(--gold);margin-bottom:4px}
+.item span{font-size:14px;color:var(--soft)}
+.note{font-size:13px;line-height:1.45;border-radius:12px;padding:9px 12px;background:rgba(0,41,84,.55);color:#dbe8f7;margin-top:10px}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+form label{display:block;font-size:13px;color:var(--mute);margin:0 0 4px 6px}
+textarea.field{min-height:100px;resize:vertical}
+select.field{appearance:none}
+.log{margin-top:18px;border-radius:18px;border:1px solid #16263b;background:rgba(2,11,23,.6);padding:12px}
+.log .h{font-size:14px;color:var(--soft);margin-bottom:6px}
+.log .e{font-size:13px;color:#4b5b70}
+.log .d{font-size:13px;border-radius:12px;padding:7px 12px;background:rgba(2,44,34,.45);color:#d1fae5;margin-top:6px}
+footer{margin-top:28px;text-align:center;color:var(--mute);font-size:13px}
+footer a{color:var(--gold)}
+.hidden{display:none}
+@media (max-width:860px){.cards{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){
+  .cards{grid-template-columns:repeat(2,1fr);gap:12px}
+  .card{padding:14px}.card .ic{font-size:30px}.card .t{font-size:16px}.card .l{font-size:12px}
+  .hero{min-height:200px}.hero h1{font-size:24px}
+  .list,form .row{grid-template-columns:1fr}
+  .top{flex-direction:column;align-items:flex-start}
+  .line{flex-direction:column}.line .green{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="mark"><img src="logo.png" alt="Remnant Heartbeat logo"><div class="nm">Remnant Heartbeat<small>Justice for the vulnerable</small></div></div>
+    <div class="chip"><b>Apply</b> for case funding</div>
+  </div>
+
+  <div class="hero" role="img" aria-label="A courthouse, a church, and a tower under a golden sky">
+    <div class="say"><h1>Funding legal cases for those who <span>cannot afford representation.</span></h1></div>
+  </div>
+
+  <div class="helper">
+    <div class="avatar"><img src="logo.png" alt=""></div>
+    <div class="bubble"><p>Remnant Heartbeat provides <b>financial support and advocacy</b> for families, Kingdom businesses, and property owners facing legal challenges, in partnership with <b>Rugged Law</b> for strategic legal defense. Pick a square, or tell us what you need.</p></div>
+  </div>
+
+  <div class="line">
+    <input id="ask" class="field" placeholder="Tell us in your own words, like “I need help with my custody case”">
+    <button id="askBtn" class="green">Show me</button>
+  </div>
+
+  <div id="home"><div class="cards" id="cards"></div></div>
+  <div id="open" class="hidden"></div>
+
+  <div class="log"><div class="h">📜 What just happened</div><div id="log"><div class="e">Nothing yet. Press a square and it opens here.</div></div></div>
+
+  <footer>© <span id="yr">2026</span> Remnant Heartbeat · <a href="mailto:info@remnantheartbeat.org">info@remnantheartbeat.org</a></footer>
+</div>
+
+<template id="t-mission">
+  <p class="big">Funding legal cases for those who cannot afford representation.</p>
+  <p><b style="color:var(--gold)">Our vision:</b> to establish Kingdom of Heaven rule over land through legal protection, strategic defense against lawfare, and spiritual resilience.</p>
+  <div class="list">
+    <div class="item"><b>Justice for the vulnerable</b><span>Help for people who face the courts without the means to hire a lawyer.</span></div>
+    <div class="item"><b>Kingdom-aligned legal defense</b><span>Strategic defense against lawfare, grounded in Kingdom principles.</span></div>
+    <div class="item"><b>Spiritual strength and endurance</b><span>Standing with families through the long road of a legal fight.</span></div>
+    <div class="item"><b>Constitutional and property rights</b><span>Protecting parental rights, families, Kingdom businesses, and land.</span></div>
+  </div>
+</template>
+
+<template id="t-family">
+  <p class="big">Representation for parents and families whose constitutional parental rights are impacted by juvenile dependency and family law proceedings.</p>
+  <p>When the state or a court stands between a parent and a child, the cost of a lawyer should not decide the outcome. Remnant Heartbeat helps fund that representation.</p>
+</template>
+
+<template id="t-business">
+  <p class="big">Legal representation and formation for businesses building with Kingdom principles and values.</p>
+  <p>From forming the company to defending it, we help Kingdom businesses stand on solid legal ground.</p>
+</template>
+
+<template id="t-realestate">
+  <p class="big">Representation in transactions, zoning reviews, and real estate litigation to protect property rights.</p>
+  <p>Our mission here is to facilitate homes, infrastructure, and prosperity to establish Kingdom of Heaven rule over land.</p>
+</template>
+
+<template id="t-how">
+  <div class="list">
+    <div class="item"><b>1 · Tell us your situation</b><span>Use the form. A short description is enough to begin.</span></div>
+    <div class="item"><b>2 · We review it</b><span>Each request is reviewed for need and for the kind of case we fund.</span></div>
+    <div class="item"><b>3 · Funding and counsel</b><span>Approved cases are funded for representation through our partner, Rugged Law.</span></div>
+    <div class="item"><b>4 · We stand with you</b><span>Financial support, advocacy, and spiritual resilience in the face of injustice.</span></div>
+  </div>
+  <div class="note">Applying does not create an attorney-client relationship, and funding is not guaranteed. Please do not send confidential details until someone has spoken with you.</div>
+</template>
+
+<template id="t-give">
+  <p class="big">Every gift funds representation for someone who could not otherwise afford it.</p>
+  <p>To give, or to talk with us about supporting a case, write to <a style="color:var(--gold)" href="mailto:info@remnantheartbeat.org?subject=Giving%20to%20Remnant%20Heartbeat">info@remnantheartbeat.org</a> and someone will reach out personally.</p>
+</template>
+
+<template id="t-apply">
+  <p>Tell us briefly what you are facing. Someone from Remnant Heartbeat will contact you.</p>
+  <form id="ap" novalidate>
+    <div class="row">
+      <div><label for="f-name">Your name</label><input id="f-name" class="field" name="name" autocomplete="name"></div>
+      <div><label for="f-email">Email</label><input id="f-email" class="field" name="email" type="email" autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div><label for="f-phone">Phone</label><input id="f-phone" class="field" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="f-area">Kind of case</label>
+        <select id="f-area" class="field" name="area"><option>Family law / parental rights</option><option>Kingdom business</option><option>Real estate / property rights</option><option>Something else</option></select></div>
+    </div>
+    <label for="f-msg">A few sentences about your situation</label>
+    <textarea id="f-msg" class="field" name="message"></textarea>
+    <div class="note">Applying does not create an attorney-client relationship. Please do not include confidential details yet.</div>
+    <div style="margin-top:12px"><button class="green" type="submit">Send my request</button></div>
+  </form>
+</template>
+
+<script>
+var CARDS = [
+  {k:'mission',    ic:'💛', tint:'gold',    t:'Our mission',            l:'Funding cases for those who cannot afford a lawyer.'},
+  {k:'family',     ic:'👨‍👩‍👧', tint:'navy',  t:'Family law',             l:'Parents whose rights are on the line.'},
+  {k:'business',   ic:'⚡', tint:'amber',   t:'Kingdom business',       l:'Formation and defense for Kingdom businesses.'},
+  {k:'realestate', ic:'🛡️', tint:'teal',    t:'Real estate',            l:'Protecting homes, land, and property rights.'},
+  {k:'how',        ic:'🧭', tint:'sky',     t:'How it works',           l:'From your request to funded counsel.'},
+  {k:'apply',      ic:'✍️', tint:'emerald', t:'Apply for case funding', l:'Tell us what you are facing.'},
+  {k:'give',       ic:'🙌', tint:'violet',  t:'Give',                   l:'Fund representation for someone in need.'},
+  {k:'contact',    ic:'✉️', tint:'rose',    t:'Contact us',             l:'info@remnantheartbeat.org'}
+];
+var WORDS = [[/custody|child|parent|family|divorce|dhs|dependency|juvenile/i,'family'],[/business|company|llc|form|kingdom business/i,'business'],
+  [/house|home|land|property|zoning|real estate|landlord/i,'realestate'],[/give|donat|support|fund a|help fund/i,'give'],
+  [/apply|need help|lawyer|attorney|case|afford/i,'apply'],[/how|work|process/i,'how'],[/contact|email|call|talk/i,'contact']];
+function el(id){return document.getElementById(id);}
+function log(t){var L=el('log');if(L.firstElementChild&&L.firstElementChild.className==='e')L.innerHTML='';var d=document.createElement('div');d.className='d';d.textContent='✨ Done. '+t;L.prepend(d);while(L.children.length>4)L.lastChild.remove();}
+function home(){el('open').classList.add('hidden');el('home').classList.remove('hidden');window.scrollTo({top:0,behavior:'smooth'});}
+function openCard(k){
+  if(k==='contact'){window.location.href='mailto:info@remnantheartbeat.org?subject='+encodeURIComponent('Remnant Heartbeat');log('Your email app is opening to write to us.');return;}
+  var c=CARDS.filter(function(x){return x.k===k;})[0];if(!c)return;
+  var o=el('open');o.innerHTML='';var p=document.createElement('div');p.className='panel';
+  p.innerHTML='<div class="panel-head"><h2>'+c.ic+' '+c.t+'</h2><button class="quiet" type="button">← Back</button></div>';
+  p.querySelector('.quiet').onclick=home;p.appendChild(el('t-'+k).content.cloneNode(true));
+  if(k!=='apply'){var b=document.createElement('div');b.style.marginTop='14px';b.innerHTML='<button class="green" type="button">Apply for case funding</button>';b.firstChild.onclick=function(){openCard('apply');};p.appendChild(b);}
+  o.appendChild(p);el('home').classList.add('hidden');o.classList.remove('hidden');
+  if(k==='apply')wire();log('Opened “'+c.t+'”.');window.scrollTo({top:0,behavior:'smooth'});
+}
+function wire(){var f=el('ap');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var v=function(n){return(f.elements[n].value||'').trim();};
+  if(!v('name')||!v('email')){log('Add your name and email, then press the green button again.');return;}
+  var body='Name: '+v('name')+'\nEmail: '+v('email')+'\nPhone: '+v('phone')+'\nKind of case: '+v('area')+'\n\n'+v('message');
+  window.location.href='mailto:info@remnantheartbeat.org?subject='+encodeURIComponent('Case funding request - '+v('name'))+'&body='+encodeURIComponent(body);
+  log('Your request is ready in your email app. Press send there and we will reach out.');});}
+(function(){var g=el('cards');CARDS.forEach(function(c){var b=document.createElement('button');b.type='button';b.className='card '+c.tint;
+  b.innerHTML='<div class="ic">'+c.ic+'</div><div><div class="t">'+c.t+'</div><div class="l">'+c.l+'</div></div>';b.onclick=function(){openCard(c.k);};g.appendChild(b);});
+  function ask(){var q=el('ask').value.trim();if(!q)return;for(var i=0;i<WORDS.length;i++){if(WORDS[i][0].test(q)){openCard(WORDS[i][1]);el('ask').value='';return;}}openCard('apply');el('ask').value='';}
+  el('askBtn').onclick=ask;el('ask').addEventListener('keydown',function(e){if(e.key==='Enter')ask();});el('yr').textContent=new Date().getFullYear();})();
+</script>
+</body>
+</html>
